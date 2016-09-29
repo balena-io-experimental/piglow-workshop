@@ -1,0 +1,26 @@
+{
+  "name": "piglow-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "bash ./deps.sh",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resin-io-projects/piglow-workshop.git"
+  },
+  "keywords": [],
+  "author": "Kostas Lekkas <kostas@resin.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/resin-io-projects/piglow-workshop/issues"
+  },
+  "homepage": "https://github.com/resin-io-projects/piglow-workshop#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "piglow": "3.0.1",
+    "socket.io": "^1.4.8"
+  }
+}
