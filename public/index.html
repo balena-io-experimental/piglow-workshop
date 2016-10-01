@@ -2,19 +2,17 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
-		<script>
-			$(document).ready(function(){
-        var socket = io.connect();
-				$('button').click(function(){
-          socket.emit('lightup', {});
-          //$.ajax({url: "/lightup", type: "POST", data: {}});
-				});
-			});
-		</script>
-
-		<link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        $(document).ready(function(){
+            var socket = io.connect();
+            $('button').click(function(){
+                socket.emit('lightup', {});
+            });
+        });
+    </script>	
     <title>Athens Mini Maker Faire Workshop</title>
   </head>
   <body>
