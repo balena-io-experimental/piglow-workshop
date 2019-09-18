@@ -1,0 +1,11 @@
+# the PiGlow module is only compatible with Node.js 8 it seems
+FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine-node:8-build
+
+COPY package.json /package.json
+RUN npm install
+
+COPY . /usr/src/app
+
+WORKDIR /usr/src/app
+
+CMD npm start
